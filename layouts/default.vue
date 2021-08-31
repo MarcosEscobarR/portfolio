@@ -2,13 +2,13 @@
   <v-app dark>
     <v-app-bar
       prominent
-      app
       color="white"
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7"
+      class="px-10"
     >
       <div class="pa-5">
-        <v-img src="mf-logo.svg" max-width="65"/>
+        <v-img src="logo.svg" max-width="65"/>
       </div>
       <v-spacer/>
       <div class="pa-5">

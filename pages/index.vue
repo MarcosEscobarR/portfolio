@@ -1,9 +1,18 @@
 <template>
   <div>
     <Welcome/>
-    <Presentation/>
+    <div class="skils-container">
+      <Presentation/>
+      <skils/>
+      <skills-cards/>
+    </div>
   </div>
 </template>
 <script>
 export default {}
 </script>
+<style scoped>
+  .skils-container {
+    position: relative;
+  }
+</style>
