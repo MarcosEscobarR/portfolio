@@ -1,6 +1,7 @@
 <template>
   <div>
     <Welcome/>
+    <Presentation/>
   </div>
 </template>
 <script>

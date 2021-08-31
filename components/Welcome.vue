@@ -3,8 +3,8 @@
     <div class="main-container">
       <span class="big-title">Frontend, Backend and Apps Developer</span>
       <span class="subtitle">Building beautiful apps and webs since 2 years</span>
-      <v-img src="mf-avatar.svg" max-width="350px" />
-      <v-img class="mt-auto" src="world-grid.svg" max-width="200px"/>
+      <img src="../static/mf-avatar.svg" width="250px" />
+      <img class="mt-auto" src="../static/world-grid.svg" width="200px"/>
     </div>
   </div>
 </template>
@@ -17,7 +17,7 @@ export default {
 
 <style scoped>
 .welcome-container {
-  height: calc(100vh - 130px);
+  height: calc(80vh - 40px);
   width: 100vw;
 }
 .big-title {
@@ -32,5 +32,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 </style>

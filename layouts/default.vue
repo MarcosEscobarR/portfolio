@@ -2,6 +2,7 @@
   <v-app dark>
     <v-app-bar
       prominent
+      app
       color="white"
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7"
