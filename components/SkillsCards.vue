@@ -5,7 +5,6 @@
         icon="/analysis.svg"
         title="Frontend"
         subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
 numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
         :skills="frontendSkills"
       />
@@ -22,7 +21,6 @@ numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
         icon="/mobile-app.svg"
         title="App Development"
         subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
 numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
         :skills="appSkills"
       />
@@ -46,7 +44,7 @@ export default {
   .skills-container {
     display: flex;
     position: absolute;
-    height: 60%;
+    height: 650px;
     width: 100%;
     top: 35%;
     left: 0;
