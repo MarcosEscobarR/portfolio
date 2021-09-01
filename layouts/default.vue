@@ -8,7 +8,7 @@
       class="px-10"
     >
       <div class="pa-5">
-        <v-img src="logo.svg" max-width="65"/>
+        <v-img src="logo.svg" max-width="65" alt="logo"/>
       </div>
       <v-spacer/>
       <div class="pa-5">

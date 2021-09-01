@@ -34,7 +34,7 @@ export default {
   name: 'SkillsCards',
   data: () => ({
     frontendSkills: ['React', 'Nextjs', 'Vuejs', 'Nuxtjs', 'HTML', 'CSS'],
-    backendSkills: ['Typescript', 'Node', 'c#', 'ASP .NET Core'],
+    backendSkills: ['TypeScript', 'JavaScript', 'Node', 'c#', 'ASP .NET Core'],
     appSkills: ['React Native', 'Flutter']
   })
 }
@@ -46,7 +46,7 @@ export default {
     position: absolute;
     height: 650px;
     width: 100%;
-    top: 35%;
+    top: 30%;
     left: 0;
     justify-content: center;
     align-items: center;

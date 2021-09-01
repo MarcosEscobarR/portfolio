@@ -7,12 +7,19 @@
         {{ subtitle }}
       </p>
     </div>
-    <div><span class="primary--text mb-2" style="font-size: 20px">Skills</span>
+    <div>
+      <span class="primary--text mb-2" style="font-size: 20px">Skills</span>
       <div>
         <p v-for="(skill, index) in skills" :key="index" class="skill">
           {{ skill }}
         </p>
       </div>
+    </div>
+
+    <div class="d-flex justify-center mt-auto">
+      <v-btn outlined color="primary">
+        More
+      </v-btn>
     </div>
   </div>
 </template>
@@ -65,7 +72,7 @@ export default {
   .subtitle-container {
     padding: 10px 0;
     display: block;
-    height: 250px;
+    height: 150px;
     overflow: auto;
   }
 

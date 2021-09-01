@@ -6,6 +6,7 @@
       <skils/>
       <skills-cards/>
     </div>
+    <recent-work/>
   </div>
 </template>
 <script>

@@ -3,8 +3,8 @@
     <div class="main-container">
       <span class="big-title">Frontend, Backend and Apps Developer</span>
       <span class="subtitle">Building beautiful apps and webs since 2 years</span>
-      <img src="../static/mf-avatar.svg" width="200px" />
-      <img class="mt-auto" src="../static/hero.svg" width="600px"/>
+      <img src="../static/mf-avatar.svg" width="200px" alt="logo"/>
+      <img class="mt-auto" src="../static/hero.svg" width="600px" alt="computer"/>
     </div>
   </div>
 </template>
