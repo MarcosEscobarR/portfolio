@@ -13,7 +13,7 @@ export default {
 
 .container {
   width: 100vw;
-  height: 70vh;
+  height: 600px;
   display: flex;
   justify-content: center;
   position: relative;

@@ -4,12 +4,12 @@
       My Recent Work
     </p>
     <span class="subtitle">Here are a few projects I've working recently</span>
-    <v-row class="projects-grid">
+    <div class="projects-grid">
       <project-card />
       <project-card />
       <project-card />
       <project-card />
-    </v-row>
+    </div>
   </div>
 </template>
 
@@ -38,5 +38,7 @@ export default {
 .projects-grid {
   width: 100%;
   margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 </style>
