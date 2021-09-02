@@ -40,5 +40,6 @@ export default {
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 </style>
