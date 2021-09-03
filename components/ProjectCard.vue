@@ -6,7 +6,11 @@
           class="img"
           src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
         >
-          <v-overlay absolute/>
+          <v-overlay absolute>
+            <div class="title-container">
+              <p>{{ title }}</p>
+            </div>
+          </v-overlay>
           <v-fade-transition>
             <v-overlay v-if="hover" absolute>
               <v-btn outlined>
@@ -21,6 +25,14 @@
 </template>
 
 <script>
+export default {
+  props: {
+    title: {
+      type: String,
+      default: 'test'
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">
@@ -32,6 +44,16 @@
     width: 100%;
     height: 100%;
     border-radius: 20px;
+  }
+}
+.title-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: baseline !important;
+  p {
+    font-size: 30px;
+    color: white;
   }
 }
 
