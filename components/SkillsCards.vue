@@ -63,4 +63,15 @@ export default {
   .divider {
     background-color: #ced9d9
   }
+
+  @media (max-width: 1200px) {
+    .skills {
+      width: 80vw;
+    }
+  }
+  @media (max-width: 900px){
+    .skills {
+      width: ;
+    }
+  }
 </style>

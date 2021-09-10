@@ -1,14 +1,23 @@
 <template>
-  <div class="container">
-    <p class="title">
-      My Recent Work
-    </p>
-    <span class="subtitle">Here are a few projects I've working recently</span>
-    <div class="projects-grid">
-      <project-card />
-      <project-card />
-      <project-card />
-      <project-card />
+  <div style="margin-top: 10vh">
+    <div class="container">
+      <p class="title">
+        My Recent Work
+      </p>
+      <span class="subtitle">Here are a few projects I've working recently</span>
+      <div class="projects-grid">
+        <project-card/>
+        <project-card/>
+        <project-card/>
+        <project-card/>
+        <project-card/>
+        <project-card/>
+        <project-card/>
+        <project-card/>
+      </div>
+      <div class="d-flex  justify-center mt-8">
+        <v-btn color="primary" large outlined>See More</v-btn>
+      </div>
     </div>
   </div>
 </template>
@@ -22,10 +31,11 @@ export default {
 <style scoped>
 .container {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 .title {
   font-weight: bold;

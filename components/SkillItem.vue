@@ -81,4 +81,5 @@ export default {
     margin-bottom: 2px;
     font-weight: 300;
   }
+
 </style>
