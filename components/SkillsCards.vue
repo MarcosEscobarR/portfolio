@@ -16,7 +16,7 @@ numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
 numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
         :skills="backendSkills"
       />
-      <v-divider vertical class="divider" dark/>
+      <v-divider vertical class="divider" dark />
       <skill-item
         icon="/mobile-app.svg"
         title="App Development"
@@ -50,6 +50,7 @@ export default {
     left: 0;
     justify-content: center;
     align-items: center;
+    justify-content: center;
   }
   .skills {
     width: 60vw;
