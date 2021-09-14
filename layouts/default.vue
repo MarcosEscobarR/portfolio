@@ -34,3 +34,8 @@ export default {
   }
 }
 </script>
+<style>
+  .app-bar {
+    height: 40px!important;
+  }
+</style>
