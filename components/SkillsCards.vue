@@ -72,7 +72,6 @@ export default {
   }
   @media (max-width: 900px){
     .skills {
-      width: ;
     }
   }
 </style>
