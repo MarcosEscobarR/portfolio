@@ -30,6 +30,28 @@
       <div class="blue-container primary">
         <div class="footer-items">
           <img src="logo-white.svg" alt="logo-white">
+          <div class="phrase">
+            <p>
+              “ In order to be irreplaceable, one must always be different” – Coco Chanel
+            </p>
+          </div>
+          <div>
+            <v-btn icon class="mx-5" href="https://github.com/MarcosEscobarR" target="_blank">
+              <v-icon size="50">
+                mdi-github
+              </v-icon>
+            </v-btn>
+            <v-btn target="_blank" icon class="mx-5" href="https://www.linkedin.com/in/marcos-escobar-3a86a41a0">
+              <v-icon size="50">
+                mdi-linkedin
+              </v-icon>
+            </v-btn>
+            <v-btn target="_blank" icon class="mx-5" href="https://www.instagram.com/_escmarcos/">
+              <v-icon size="50">
+                mdi-instagram
+              </v-icon>
+            </v-btn>
+          </div>
         </div>
       </div>
       <div class="start-project-container">
@@ -114,7 +136,26 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
+    flex-direction: column;
+    padding-top: 160px;
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+
+  }
+  .phrase {
+    width: 40%;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    p {
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      font-style: oblique;
+    }
   }
 }
 </style>

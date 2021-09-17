@@ -53,7 +53,7 @@ export default {
     justify-content: center;
   }
   .skills {
-    width: 60vw;
+    width: 70vw;
     height: 100%;
     border-radius: 20px;
     box-shadow:1.5px 1.5px 1.5px 1.5px #ccc;
