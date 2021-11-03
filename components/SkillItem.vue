@@ -8,7 +8,9 @@
       </p>
     </div>
     <div>
-      <span class="primary--text mb-2" style="font-size: 20px">Skills</span>
+      <p class="primary--text mb-2 text-center" style="font-size: 20px">
+        Skills
+      </p>
       <div>
         <p v-for="(skill, index) in skills" :key="index" class="skill">
           {{ skill }}

@@ -16,7 +16,7 @@ numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
 numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
         :skills="backendSkills"
       />
-      <v-divider vertical class="divider" dark />
+      <v-divider vertical class="divider" dark/>
       <skill-item
         icon="/mobile-app.svg"
         title="App Development"
@@ -24,7 +24,15 @@ numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
 numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
         :skills="appSkills"
       />
-      <v-divider />
+      <v-divider vertical class="divider" dark/>
+      <skill-item
+        icon="/mobile-app.svg"
+        title="Marketing"
+        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
+        :skills="marketingSkills"
+      />
+      <v-divider/>
     </div>
   </div>
 </template>
@@ -35,44 +43,48 @@ export default {
   data: () => ({
     frontendSkills: ['React', 'Nextjs', 'Vuejs', 'Nuxtjs', 'HTML', 'CSS'],
     backendSkills: ['TypeScript', 'JavaScript', 'Node', 'c#', 'ASP .NET Core'],
-    appSkills: ['React Native', 'Flutter']
+    appSkills: ['React Native', 'Flutter'],
+    marketingSkills: ['Facebooks Adds', 'Google Adds', 'Spotify Adds']
   })
 }
 </script>
 
 <style scoped>
-  .skills-container {
-    display: flex;
-    position: absolute;
-    height: 650px;
-    width: 100%;
-    top: 30%;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-  }
-  .skills {
-    width: 60vw;
-    height: 100%;
-    border-radius: 20px;
-    box-shadow:1.5px 1.5px 1.5px 1.5px #ccc;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-  }
-  .divider {
-    background-color: #ced9d9
-  }
+.skills-container {
+  display: flex;
+  position: absolute;
+  height: 650px;
+  width: 100%;
+  top: 30%;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
 
-  @media (max-width: 1200px) {
-    .skills {
-      width: 80vw;
-    }
+.skills {
+  width: 60vw;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 1.5px 1.5px 1.5px 1.5px #ccc;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.divider {
+  background-color: #ced9d9
+}
+
+@media (max-width: 1200px) {
+  .skills {
+    width: 80vw;
   }
-  @media (max-width: 900px){
-    .skills {
-      width: ;
-    }
+}
+
+@media (max-width: 900px) {
+  .skills {
+    width: ;
   }
+}
 </style>
