@@ -37,10 +37,10 @@ export default {
   align-items: center;
 
 }
-.title {
-  font-weight: bold;
-  font-size: 2rem !important;
-}
+  .title {
+    font-weight: bold;
+    font-size: 2rem !important;
+  }
 .subtitle {
   font-size: 20px;
   font-weight: 200;

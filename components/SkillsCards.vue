@@ -78,13 +78,27 @@ export default {
 
 @media (max-width: 1200px) {
   .skills {
-    width: 80vw;
+    width: 70vw;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow:1.5px 1.5px 1.5px 1.5px #ccc;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+  }
+  .divider {
+    background-color: #ced9d9
   }
 }
 
-@media (max-width: 900px) {
-  .skills {
-    width: ;
+  @media (max-width: 1200px) {
+    .skills {
+      width: 80vw;
+    }
+  }
+  @media (max-width: 900px){
+    .skills {
+    }
   }
 }
 </style>

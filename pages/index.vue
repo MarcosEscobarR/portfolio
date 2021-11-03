@@ -7,6 +7,8 @@
       <skills-cards/>
     </div>
     <recent-work/>
+    <v-divider class="primary"/>
+    <about-me/>
   </div>
 </template>
 <script>
