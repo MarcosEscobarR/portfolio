@@ -1,15 +1,20 @@
 <template>
   <div class="experience-container">
     <div class="titles-container">
-      <p class="title">{{ title }}</p>
-      <p class="subtitle">{{ subtitle }}</p>
+      <p class="title">
+        {{ title }}
+      </p>
+      <p class="subtitle">
+        {{ subtitle }} {{ $t('yearsOfExperience') }}
+      </p>
     </div>
     <v-progress-linear
       color="primary"
       height="8"
       rounded
       background-color="grey"
-      :value="progress" />
+      :value="progress"
+    />
   </div>
 </template>
 

@@ -19,7 +19,7 @@ numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
       <v-divider vertical class="divider" dark/>
       <skill-item
         icon="/mobile-app.svg"
-        title="App Development"
+        :title="$t('appDevelopment')"
         subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
         :skills="appSkills"

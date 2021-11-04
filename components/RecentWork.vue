@@ -2,27 +2,29 @@
   <div style="margin-top: 10vh">
     <div class="container">
       <p class="title">
-        My Recent Work
+        {{$t('recentTitle')}}
       </p>
-      <span class="subtitle">Here are a few projects I've working recently</span>
+      <span class="subtitle">{{$t('recentSubtitle')}}</span>
       <div class="projects-grid">
-        <project-card/>
-        <project-card/>
-        <project-card/>
-        <project-card/>
-        <project-card/>
-        <project-card/>
+        <project-card v-for="(item, index) in Object.values(projectData)" :key="index" :title="item.title" :project-data="item" />
       </div>
       <div class="d-flex  justify-center mt-8">
-        <v-btn color="primary" large outlined>See More</v-btn>
+        <v-btn color="primary" large outlined href="https://github.com/MarcosEscobarR" target="_blank">
+          See More
+        </v-btn>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { ProjectData } from '~/helpers/ProjectData'
+
 export default {
-  name: 'RecentWork'
+  name: 'RecentWork',
+  data: () => ({
+    projectData: ProjectData
+  })
 }
 </script>
 

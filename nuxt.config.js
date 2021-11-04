@@ -10,15 +10,35 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'this is a developer portfolio Marcos Escobar ' },
-      { name: 'format-detection', content: 'telephone=no' },
-      { name: 'keywords', content: 'website, portfolio, web developer, app developer' },
-      { name: 'author', content: 'Marcos Escobar' }
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'this is a developer portfolio Marcos Escobar '
+      },
+      {
+        name: 'format-detection',
+        content: 'telephone=no'
+      },
+      {
+        name: 'keywords',
+        content: 'website, portfolio, web developer, app developer'
+      },
+      {
+        name: 'author',
+        content: 'Marcos Escobar'
+      }
 
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      }
     ]
   },
 
@@ -28,8 +48,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -45,9 +64,30 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/i18n'
   ],
-
+  i18n: {
+    baseUrl: 'https://marcos-portafolio.herokuapp.com',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US'
+      },
+      {
+        code: 'es',
+        iso: 'es-ES'
+      }
+    ],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'es',
+      messages: {
+        en: require('./assets/locales/en.json'),
+        es: require('./assets/locales/es.json')
+      }
+    }
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
@@ -71,6 +111,5 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: {}
 }

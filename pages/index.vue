@@ -1,14 +1,14 @@
 <template>
   <div>
-    <Welcome/>
+    <Welcome />
     <div class="skils-container">
-      <Presentation/>
-      <skils/>
-      <skills-cards/>
+      <Presentation />
+      <skils />
+      <skills-cards />
     </div>
-    <recent-work/>
-    <v-divider class="primary"/>
-    <about-me/>
+    <recent-work />
+    <v-divider class="primary" />
+    <about-me />
   </div>
 </template>
 <script>

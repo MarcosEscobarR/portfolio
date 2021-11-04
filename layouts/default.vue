@@ -12,13 +12,42 @@
       </div>
       <v-spacer />
       <div class="pa-5">
-        <span>Developer</span>
+        <v-menu
+          bottom
+          origin="center center"
+          transition="scale-transition"
+        >
+          <template #activator="{ on, attrs }">
+            <v-btn
+              icon
+              large
+              v-bind="attrs"
+              v-on="on"
+            >
+              <v-icon color="primary" large>mdi-web</v-icon>
+            </v-btn>
+          </template>
+
+          <v-list>
+            <v-list-item :to="switchLocalePath('es')">
+              <v-list-item-icon> <country-flag country="esp" size="big" /> </v-list-item-icon>
+              <v-list-item-title>Español</v-list-item-title>
+            </v-list-item>
+            <v-list-item :to="switchLocalePath('en')">
+              <v-list-item-icon> <country-flag country="us" size="big" /> </v-list-item-icon>
+              <v-list-item-title>Ingles</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+      </div>
+      <div class="pa-5">
+        <span>{{ $t('layoutTitle') }}</span>
         <v-btn
           outlined
           rounded
           color="primary"
         >
-          Say Hello
+          {{ $t('helloButton') }}
         </v-btn>
       </div>
     </v-app-bar>
@@ -32,7 +61,7 @@
           <img src="logo-white.svg" alt="logo-white">
           <div class="phrase">
             <p>
-              “ In order to be irreplaceable, one must always be different” – Coco Chanel
+              “ {{ $t('phrase') }}” – Coco Chanel
             </p>
           </div>
           <div>
@@ -57,17 +86,17 @@
       <div class="start-project-container">
         <div class="start-project">
           <p class="primary-title">
-            Start a Project
+            {{ $t('footerTitle') }}
           </p>
           <p class="secondary-title">
-            Interested in working together? We should queue up a chat. I’ll buy the coffee.
+            {{ $t('footerSubtitle') }}
           </p>
           <v-btn
             outlined
             x-large
             color="primary"
           >
-            Let's do it
+            {{ $t('letsDoIt') }}
           </v-btn>
         </div>
       </div>
@@ -76,13 +105,23 @@
 </template>
 
 <script>
+import CountryFlag from 'vue-country-flag'
+
 export default {
+  components: {
+    CountryFlag
+  },
   data () {
     return {}
   }
 }
 </script>
 <style scoped lang="scss">
+.web-icon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column
+}
 .white-container {
   width: 100vw;
   height: 250px;
@@ -145,11 +184,13 @@ export default {
     }
 
   }
+
   .phrase {
     width: 40%;
     margin: 30px;
     display: flex;
     justify-content: center;
+
     p {
       color: white;
       font-size: 30px;

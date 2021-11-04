@@ -2,12 +2,11 @@
   <div class="blue-container primary">
     <div class="container">
       <div class="title-container">
-        <span class="presentation-title">Hi! I'm Marcos. Nice to meet you</span>
+        <span class="presentation-title">{{ $t('presentationTitle') }}</span>
       </div>
       <div>
         <p class="presentation-subtitle">
-          Since my full experience being developer (more 3 years) I've done many many platforms for many agencies, working in person inside and outside for companies and collaborate with talent people to create very good products.
-          I'm naturally Curiosly, confidential and tech lover, passionate for resolve problems with the best way.
+          {{ $t('presentationSubtitle') }}
         </p>
       </div>
     </div>

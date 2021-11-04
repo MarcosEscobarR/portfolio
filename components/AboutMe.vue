@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <p class="title">
-      About Me
+      {{ $t('aboutMeTitle') }}
     </p>
     <div class="profile-container">
       <div>
@@ -27,22 +27,22 @@
     </div>
     <experience-meter
       title="ASP .Net Core"
-      subtitle="1.5 years or experience"
+      subtitle="1.5"
       :progress="aspMeter"
     />
     <experience-meter
       title="JavaScript"
-      subtitle="3 years or experience"
+      subtitle="3"
       :progress="jsMeter"
     />
     <experience-meter
       title="VueJs/ ReactJs"
-      subtitle="2 years or experience"
+      subtitle="2"
       :progress="vueReactMeter"
     />
     <experience-meter
       title="Flutter"
-      subtitle="1.5 years or experience"
+      subtitle="1.5"
       :progress="flutterMeter"
     />
 

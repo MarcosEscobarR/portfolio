@@ -1,10 +1,10 @@
 <template>
   <div class="welcome-container">
     <div class="main-container">
-      <span class="big-title">Frontend, Backend and Apps Developer</span>
-      <span class="subtitle">Building beautiful apps and webs since 2 years</span>
-      <img src="../static/mf-avatar.svg" class="avatar" alt="logo"/>
-      <img class="computer" src="../static/hero.svg" alt="computer"/>
+      <span class="big-title">{{ $t('welcomeTitle') }}</span>
+      <span class="subtitle">{{ $t('welcomeSubtitle') }}</span>
+      <img src="../static/mf-avatar.svg" class="avatar" alt="logo">
+      <img class="computer" src="../static/hero.svg" alt="computer">
     </div>
   </div>
 </template>

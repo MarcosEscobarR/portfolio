@@ -1,8 +1,8 @@
 <template>
-  <v-dialog max-width="600px" v-model="model">
+  <v-dialog v-model="model" max-width="600px">
     <v-card max-width="600px">
       <v-img :src="image">
-        <v-card-title>{{ title }}}</v-card-title>
+        <v-card-title>{{ title }}</v-card-title>
       </v-img>
       <v-card-text>{{ description }}</v-card-text>
     </v-card>
