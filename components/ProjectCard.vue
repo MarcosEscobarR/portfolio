@@ -37,8 +37,8 @@ export default {
 
 <style scoped lang="scss">
 .container {
-  width: 290px;
-  height: 250px;
+  width: 400px;
+  height: 320px;
   border-radius: 20px;
   .img {
     width: 100%;

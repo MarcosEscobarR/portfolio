@@ -12,8 +12,6 @@
         <project-card/>
         <project-card/>
         <project-card/>
-        <project-card/>
-        <project-card/>
       </div>
       <div class="d-flex  justify-center mt-8">
         <v-btn color="primary" large outlined>See More</v-btn>
@@ -30,8 +28,9 @@ export default {
 
 <style scoped>
 .container {
+  margin-bottom: 100px;
   width: 100vw;
-  height: 90vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +45,7 @@ export default {
   font-weight: 200;
 }
 .projects-grid {
-  width: 100%;
+  width: 90%;
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
