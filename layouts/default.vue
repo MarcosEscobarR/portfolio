@@ -6,6 +6,7 @@
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7"
       class="px-10"
+      outlined
     >
       <div class="pa-5">
         <v-img src="logo.svg" max-width="65" alt="logo" />

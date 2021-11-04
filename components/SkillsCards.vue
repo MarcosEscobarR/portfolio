@@ -4,35 +4,31 @@
       <skill-item
         icon="/analysis.svg"
         title="Frontend"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
+        :subtitle="$t('skillsFrontDesc')"
         :skills="frontendSkills"
       />
-      <v-divider vertical class="divider" dark/>
+      <v-divider vertical class="divider" dark />
       <skill-item
         icon="/seo.svg"
         title="Backend"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
+        :subtitle="$t('skillsBackendDesc')"
         :skills="backendSkills"
       />
-      <v-divider vertical class="divider" dark/>
+      <v-divider vertical class="divider" dark />
       <skill-item
         icon="/mobile-app.svg"
         :title="$t('appDevelopment')"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
+        :subtitle="$t('skillsAppDesc' )"
         :skills="appSkills"
       />
-      <v-divider vertical class="divider" dark/>
+      <v-divider vertical class="divider" dark />
       <skill-item
-        icon="/mobile-app.svg"
+        icon="/profit.png"
         title="Marketing"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium"
+        :subtitle="$t('skillsMarketingDesc')"
         :skills="marketingSkills"
       />
-      <v-divider/>
+      <v-divider />
     </div>
   </div>
 </template>

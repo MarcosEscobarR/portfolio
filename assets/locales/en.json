@@ -13,12 +13,16 @@
   "presentationSubtitle": "Since my full experience being developer (more 3 years) I've done many many platforms for many agencies, working in person inside and outside for companies and collaborate with talent people to create very good products. I'm naturally Curiosly, confidential and tech lover, passionate for resolve problems with the best way.",
 
   "skillsTitle": "Skills",
+  "skillsBackendDesc": "Creation of APIs made in Nodejs or ASP .Net Core starting from the architecture analysis, database design and development, resulting in robust, efficient and maintainable APIs",
+  "skillsFrontDesc": "Design analysis, layout and implementation of user interfaces using different technologies and frameworks according to the project",
+  "skillsAppDesc": "Layout design and layout, connection with APIs, databases or external services, authenticate with Google and Facebook and deploy in Appstore or Google Play",
+  "skillsMarketingDesc": "Together with a team we work on the growth and development of the brand of a company or person using the most powerful platforms on the market creating guidelines on all social networks",
 
   "recentTitle": "My Recent Work",
   "recentSubtitle": "Here are a few projects I've working recently",
 
   "aboutMeTitle": "About Me",
-
+  "aboutMeDescription": "Hello! First of all Thank you very much for coming to my Personal Page !! And what can I say, I am a Systems Analysis student at the National University of Asuncion and a programming nerd, I have been writing code since I was 14 years old and since then I have not stopped (which I feel very proud of).\nI have worked for different companies on lots of projects, I developed from a landing to a complete ERP, I got to touch different technologies and work with all kinds of people. Currently I am working in a company remotely and developing as a freelance, a world that I love.\n  If you feel interested in my work, do not hesitate to contact me and have a coffee together !!",
   "footerTitle": "Start a Project",
   "footerSubtitle": "Interested in working together? We should queue up a chat. I’ll buy the coffee."
 

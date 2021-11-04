@@ -69,9 +69,9 @@ export default {
 
 .subtitle {
   text-align: center;
-  word-break: break-all;
   letter-spacing: 0.5px;
   color: grey;
+  word-break: normal;
 }
 
 .subtitle-container {
