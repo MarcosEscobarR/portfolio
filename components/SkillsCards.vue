@@ -1,34 +1,73 @@
 <template>
-  <div class="skills-container">
-    <div class="skills">
-      <skill-item
-        icon="/analysis.svg"
-        title="Frontend"
-        :subtitle="$t('skillsFrontDesc')"
-        :skills="frontendSkills"
-      />
-      <v-divider vertical class="divider" dark />
-      <skill-item
-        icon="/seo.svg"
-        title="Backend"
-        :subtitle="$t('skillsBackendDesc')"
-        :skills="backendSkills"
-      />
-      <v-divider vertical class="divider" dark />
-      <skill-item
-        icon="/mobile-app.svg"
-        :title="$t('appDevelopment')"
-        :subtitle="$t('skillsAppDesc' )"
-        :skills="appSkills"
-      />
-      <v-divider vertical class="divider" dark />
-      <skill-item
-        icon="/profit.png"
-        title="Marketing"
-        :subtitle="$t('skillsMarketingDesc')"
-        :skills="marketingSkills"
-      />
-      <v-divider />
+  <div class="container">
+    <div class="skills-container">
+      <div class="skills">
+        <v-row>
+          <v-col
+            class="d-flex"
+            cols="12"
+            xl="3"
+            sm="6"
+            md="6"
+            lg="3"
+          >
+            <skill-item
+              icon="/analysis.svg"
+              title="Frontend"
+              :subtitle="$t('skillsFrontDesc')"
+              :skills="frontendSkills"
+            />
+          </v-col>
+          <v-col
+            class="d-flex"
+            cols="12"
+            xl="3"
+            sm="6"
+            md="6"
+            lg="3"
+          >
+            <v-divider vertical class="divider" dark />
+            <skill-item
+              icon="/seo.svg"
+              title="Backend"
+              :subtitle="$t('skillsBackendDesc')"
+              :skills="backendSkills"
+            />
+          </v-col>
+          <v-col
+            class="d-flex"
+            cols="12"
+            xl="3"
+            sm="6"
+            md="6"
+            lg="3"
+          >
+            <v-divider vertical class="divider" dark />
+            <skill-item
+              icon="/mobile-app.svg"
+              :title="$t('appDevelopment')"
+              :subtitle="$t('skillsAppDesc' )"
+              :skills="appSkills"
+            />
+          </v-col>
+          <v-col
+            class="d-flex"
+            cols="12"
+            xl="3"
+            sm="6"
+            md="6"
+            lg="3"
+          >
+            <v-divider vertical class="divider" dark />
+            <skill-item
+              icon="/profit.png"
+              title="Marketing"
+              :subtitle="$t('skillsMarketingDesc')"
+              :skills="marketingSkills"
+            />
+          </v-col>
+        </v-row>
+      </div>
     </div>
   </div>
 </template>
@@ -46,16 +85,19 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  position: relative;
+  height: 800px;
+}
 .skills-container {
   display: flex;
   position: absolute;
-  height: 650px;
+  height: auto;
   width: 100%;
-  top: 30%;
-  left: 0;
+  top: -20px;
+  left:0;
   justify-content: center;
   align-items: center;
-  justify-content: center;
 }
 
 .skills {
@@ -65,7 +107,6 @@ export default {
   box-shadow: 1.5px 1.5px 1.5px 1.5px #ccc;
   background-color: white;
   display: flex;
-  flex-direction: row;
 }
 
 .divider {
@@ -77,24 +118,41 @@ export default {
     width: 70vw;
     height: 100%;
     border-radius: 20px;
-    box-shadow:1.5px 1.5px 1.5px 1.5px #ccc;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px #ccc;
     background-color: white;
     display: flex;
     flex-direction: row;
   }
+
   .divider {
     background-color: #ced9d9
   }
 }
 
-  @media (max-width: 1200px) {
-    .skills {
-      width: 80vw;
-    }
+@media (max-width: 1024px) {
+  .skills {
+    width: 80vw;
   }
-  @media (max-width: 900px){
-    .skills {
-    }
+
+  .skills-container {
+    height: auto;
+    margin-top: 25px;
   }
+  .container {
+    height: 1100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .skills {
+    width: 90vw;
+  }
+  .skills-container {
+    top: -40px;
+  }
+  .container {
+    height: 1200px;
+  }
+}
 
 </style>

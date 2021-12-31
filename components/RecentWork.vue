@@ -47,7 +47,7 @@ export default {
   font-weight: 200;
 }
 .projects-grid {
-  width: 90%;
+  max-width: 1440px;
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;

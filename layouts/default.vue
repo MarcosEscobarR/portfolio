@@ -12,7 +12,7 @@
         <v-img src="logo.svg" max-width="65" alt="logo" />
       </div>
       <v-spacer />
-      <div class="pa-5">
+      <div class="pa-5" >
         <v-menu
           bottom
           origin="center center"
@@ -25,31 +25,38 @@
               v-bind="attrs"
               v-on="on"
             >
-              <v-icon color="primary" large>mdi-web</v-icon>
+              <div class="mr-10">
+                <country-flag style="border-radius: 25px" :country="$i18n.locale === 'es'? 'esp' : 'us'" size="medium" />
+                <p>{{ $i18n.locale === 'es' ? "Idoma Español" : "English Language" }}</p>
+              </div>
             </v-btn>
           </template>
 
           <v-list>
             <v-list-item :to="switchLocalePath('es')">
-              <v-list-item-icon> <country-flag country="esp" size="big" /> </v-list-item-icon>
+              <v-list-item-icon>
+                <country-flag country="esp" size="big" />
+              </v-list-item-icon>
               <v-list-item-title>Español</v-list-item-title>
             </v-list-item>
             <v-list-item :to="switchLocalePath('en')">
-              <v-list-item-icon> <country-flag country="us" size="big" /> </v-list-item-icon>
+              <v-list-item-icon>
+                <country-flag country="us" size="big" />
+              </v-list-item-icon>
               <v-list-item-title>Ingles</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
       </div>
       <div class="pa-5">
-        <span>{{ $t('layoutTitle') }}</span>
-        <v-btn
-          outlined
-          rounded
-          color="primary"
-        >
-          {{ $t('helloButton') }}
-        </v-btn>
+<!--        <span>{{ $t('layoutTitle') }}</span>-->
+        <!--        <v-btn-->
+        <!--          outlined-->
+        <!--          rounded-->
+        <!--          color="primary"-->
+        <!--        >-->
+        <!--          {{ $t('helloButton') }}-->
+        <!--        </v-btn>-->
       </div>
     </v-app-bar>
     <v-main>
@@ -86,19 +93,50 @@
       </div>
       <div class="start-project-container">
         <div class="start-project">
-          <p class="primary-title">
-            {{ $t('footerTitle') }}
-          </p>
-          <p class="secondary-title">
-            {{ $t('footerSubtitle') }}
-          </p>
-          <v-btn
-            outlined
-            x-large
-            color="primary"
-          >
-            {{ $t('letsDoIt') }}
-          </v-btn>
+          <v-row>
+            <v-col
+              align-self="center"
+              class="d-flex justify-center"
+              cols="12"
+              lg="4"
+              md="6"
+              xl="4"
+            >
+              <p class="primary-title">
+                {{ $t('footerTitle') }}
+              </p>
+            </v-col>
+            <v-col
+              align-self="center"
+              class="d-flex justify-center"
+              cols="12"
+              lg="4"
+              md="6"
+              xl="4"
+            >
+              <p class="secondary-title">
+                {{ $t('footerSubtitle') }}
+              </p>
+            </v-col>
+            <v-col
+              align-self="center"
+              class="d-flex justify-center"
+              cols="12"
+              lg="4"
+              md="12"
+              xl="4"
+            >
+              <v-btn
+                outlined
+                x-large
+                color="primary"
+                target="_blank"
+                href="https://forms.gle/inETw9kwPNPDDv6F9"
+              >
+                {{ $t('letsDoIt') }}
+              </v-btn>
+            </v-col>
+          </v-row>
         </div>
       </div>
     </div>
@@ -123,6 +161,7 @@ export default {
   justify-content: center;
   flex-direction: column
 }
+
 .white-container {
   width: 100vw;
   height: 250px;
@@ -151,7 +190,7 @@ export default {
   height: 250px;
   border-radius: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%), 0 0 0 1px #141c3a;
 
@@ -170,7 +209,7 @@ export default {
 }
 
 .blue-container {
-  height: calc(100vh - 250px);
+  height: 500px;
 
   .footer-items {
     display: flex;
@@ -198,6 +237,22 @@ export default {
       text-align: center;
       font-style: oblique;
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .start-project {
+    width: 80vw;
+  }
+
+  .phrase {
+    p{
+      font-size: 20px;
+    }
+  }
+
+  .footer-items {
+    height: 400px;
   }
 }
 </style>

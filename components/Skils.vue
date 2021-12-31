@@ -13,9 +13,20 @@ export default {
 
 .container {
   width: 100vw;
-  height: 600px;
+  height: 800px;
   display: flex;
   justify-content: center;
   position: relative;
+}
+
+@media (max-width: 1024px) {
+  .container{
+    margin-top: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    margin-top: 0;
+  }
 }
 </style>

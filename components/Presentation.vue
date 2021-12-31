@@ -39,4 +39,19 @@ export default {
     font-size: 20px;
     text-align: center;
   }
+
+  @media (max-width: 800px) {
+    .presentation-title {
+      font-size: 30px;
+    }
+    .presentation-subtitle {
+      font-size: 18px;
+    }
+    .blue-container {
+      height: 300px;
+    }
+    .container {
+      padding: 50px 100px;
+    }
+  }
 </style>

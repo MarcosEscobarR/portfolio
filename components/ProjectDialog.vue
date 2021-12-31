@@ -1,10 +1,13 @@
 <template>
-  <v-dialog v-model="model" max-width="600px">
-    <v-card max-width="600px">
-      <v-img :src="image">
-        <v-card-title>{{ title }}</v-card-title>
-      </v-img>
-      <v-card-text>{{ description }}</v-card-text>
+  <v-dialog v-model="model" max-width="800px">
+    <v-card max-width="800px">
+      <v-img :src="image" alt="logo"/>
+      <div class="pa-4">
+        <v-card-actions class="d-block">
+          <v-card-title>{{ title }}</v-card-title>
+          <p style="font-size: 20px">{{ description }}</p>
+        </v-card-actions>
+      </div>
     </v-card>
   </v-dialog>
 </template>

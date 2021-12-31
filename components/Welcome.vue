@@ -43,4 +43,29 @@ export default {
   margin-top: auto;
   min-width: 600px;
 }
+
+@media (max-width: 450px) {
+  .avatar {
+    padding-top: 10px;
+    max-width: 50px;
+    max-height: 200px;
+    /*transform: scale(0.75);*/
+  }
+  .computer {
+    margin-top: auto;
+    transform: scale(0.5);
+  }
+
+  .big-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 20px;
+    text-align: center;
+  }
+  .welcome-container {
+    height: calc(90vh - 80px);
+  }
+}
 </style>

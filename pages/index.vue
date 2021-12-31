@@ -3,7 +3,7 @@
     <Welcome />
     <div class="skils-container">
       <Presentation />
-      <skils />
+<!--      <skils />-->
       <skills-cards />
     </div>
     <recent-work />

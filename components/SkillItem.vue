@@ -50,6 +50,7 @@ export default {
 .container {
   padding: 40px;
   display: flex;
+  height: auto;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
@@ -90,4 +91,11 @@ export default {
 .items-container {
   height: 200px;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    width: auto;
+  }
+}
+
 </style>

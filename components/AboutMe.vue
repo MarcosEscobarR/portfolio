@@ -4,7 +4,7 @@
       {{ $t('aboutMeTitle') }}
     </p>
     <div class="profile-container">
-      <div>
+      <div class="image-container">
         <img src="../static/profile.jpg" alt="logo">
       </div>
       <div class="description">
@@ -80,12 +80,11 @@ export default {
   flex-direction: column;
 }
 .profile-container {
-  height: 300px;
+  height: auto;
   width: 90%;
   background-color: white;
   border-radius: 15%;
   display: flex;
-
 
   img {
     width: 300px;
@@ -106,5 +105,17 @@ export default {
 .title {
   font-weight: bold;
   font-size: 2rem !important;
+}
+.image-container{
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .profile-container{
+    flex-direction: column;
+  }
+  .image-container {
+    justify-content: center;
+  }
 }
 </style>

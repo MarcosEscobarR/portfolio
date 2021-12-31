@@ -4,10 +4,11 @@
       <template #default="{hover}">
         <v-img
           class="img"
-          src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
+          contain
+          :src="projectData.image"
         >
           <v-overlay absolute>
-            <div class="title-container">
+            <div v-if="!hover" class="title-container">
               <p>{{ title }}</p>
             </div>
           </v-overlay>
@@ -71,6 +72,13 @@ export default {
   p {
     font-size: 30px;
     color: white;
+  }
+}
+
+@media (max-width: 800px) {
+  .container{
+    width: 300px;
+    height: 250px;
   }
 }
 
