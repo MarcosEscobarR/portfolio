@@ -26,7 +26,7 @@
               v-on="on"
             >
               <div class="mr-10">
-                <country-flag style="border-radius: 25px" :country="$i18n.locale === 'es'? 'esp' : 'us'" size="medium" />
+                <country-flag style="border-radius: 25px" :country="$i18n.locale === 'es'? 'esp' : 'us'" size="big" />
                 <p>{{ $i18n.locale === 'es' ? "Idoma Español" : "English Language" }}</p>
               </div>
             </v-btn>

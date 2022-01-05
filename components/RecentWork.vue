@@ -2,12 +2,15 @@
   <div style="margin-top: 10vh">
     <div class="container">
       <p class="title">
-        {{$t('recentTitle')}}
+        {{ $t('recentTitle') }}
       </p>
-      <span class="subtitle">{{$t('recentSubtitle')}}</span>
-      <div class="projects-grid">
-        <project-card v-for="(item, index) in Object.values(projectData)" :key="index" :title="item.title" :project-data="item" />
-      </div>
+      <span class="subtitle">{{ $t('recentSubtitle') }}</span>
+      <vue-slick-carousel :arrows="true" :dots="true">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </vue-slick-carousel>
       <div class="d-flex  justify-center mt-8">
         <v-btn color="primary" large outlined href="https://github.com/MarcosEscobarR" target="_blank">
           See More
@@ -18,12 +21,25 @@
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
 import { ProjectData } from '~/helpers/ProjectData'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
   name: 'RecentWork',
+  components: { VueSlickCarousel },
+
   data: () => ({
-    projectData: ProjectData
+    projectData: ProjectData,
+    carouselSettings: {
+      dots: true,
+      focusOnSelect: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      touchThreshold: 5
+    }
   })
 }
 </script>

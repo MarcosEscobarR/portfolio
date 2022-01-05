@@ -3,7 +3,7 @@
     <Welcome />
     <div class="skils-container">
       <Presentation />
-<!--      <skils />-->
+      <!--      <skils />-->
       <skills-cards />
     </div>
     <recent-work />
@@ -12,7 +12,17 @@
   </div>
 </template>
 <script>
-export default {}
+export default {
+  head () {
+    return {
+      meta: [
+        { hid: 'fb:app_id', name: 'fb:app_id', content: '12873892173892' },
+        { hid: 'og:title', name: 'og:title', content: 'test' },
+        { hid: 'og:image', name: 'og:image', content: '/favicon.io' }
+      ]
+    }
+  }
+}
 </script>
 <style scoped>
   .skils-container {
