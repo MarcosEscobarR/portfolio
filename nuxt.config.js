@@ -10,6 +10,9 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
+      { hid: 'fb:description', name: 'fb:description', content: 'Portfolio de Marcos Escobar' },
+      { hid: 'og:title', name: 'og:title', content: 'Marcos Escobar' },
+      { hid: 'og:image', name: 'og:image', content: '/favicon.io' },
       {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1'
