@@ -5,7 +5,8 @@
         {{ $t('recentTitle') }}
       </p>
       <span class="subtitle">{{ $t('recentSubtitle') }}</span>
-      <ProjectsCarousel/>
+      <ProjectsCarousel :data="projectData"/>
+      <ProjectsCarousel :data="projectData"/>
       <!--      <div class="projects-grid">-->
       <!--        <project-card v-for="(item, index) in Object.values(projectData)" :key="index" :title="item.title" :project-data="item" />-->
       <!--      </div>-->
@@ -47,13 +48,6 @@ export default {
 .subtitle {
   font-size: 20px;
   font-weight: 200;
-}
-.projects-grid {
-  max-width: 1440px;
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 </style>

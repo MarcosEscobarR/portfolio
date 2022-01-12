@@ -3,7 +3,7 @@
     <div class="center">
       <div class="wrapper">
         <div ref="inner" class="inner">
-          <project-card v-for="(item, index) in Object.values(projectData)" :key="index" :title="item.title" :project-data="item" />
+          <project-card v-for="(item, index) in Object.values(data)" :key="index" :title="item.title" :project-data="item" />
         </div>
       </div>
 
@@ -18,13 +18,14 @@
 
 <script>
 
-import { ProjectData } from '@/helpers/ProjectData'
-
 export default {
   name: 'ProjectsCarousel',
-  data: () => ({
-    projectData: ProjectData
-  }),
+  props: {
+    data: {
+      type: {},
+      required: true
+    }
+  },
   methods: {
     handleClick (e) {
       if (e.target.nodeName === 'BUTTON') {

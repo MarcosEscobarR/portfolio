@@ -1,6 +1,9 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  googleAnalytics: {
+    id: 'UA-216925155-1'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '',
@@ -61,7 +64,9 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    '@nuxtjs/google-analytics'
+
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
