@@ -1,72 +1,74 @@
 <template>
-  <div class="container">
-    <div class="skills-container">
-      <div class="skills">
-        <v-row>
-          <v-col
-            class="d-flex"
-            cols="12"
-            xl="3"
-            sm="6"
-            md="6"
-            lg="3"
-          >
-            <skill-item
-              icon="/analysis.svg"
-              title="Frontend"
-              :subtitle="$t('skillsFrontDesc')"
-              :skills="frontendSkills"
-            />
-          </v-col>
-          <v-col
-            class="d-flex"
-            cols="12"
-            xl="3"
-            sm="6"
-            md="6"
-            lg="3"
-          >
-            <v-divider vertical class="divider" dark />
-            <skill-item
-              icon="/seo.svg"
-              title="Backend"
-              :subtitle="$t('skillsBackendDesc')"
-              :skills="backendSkills"
-            />
-          </v-col>
-          <v-col
-            class="d-flex"
-            cols="12"
-            xl="3"
-            sm="6"
-            md="6"
-            lg="3"
-          >
-            <v-divider vertical class="divider" dark />
-            <skill-item
-              icon="/mobile-app.svg"
-              :title="$t('appDevelopment')"
-              :subtitle="$t('skillsAppDesc' )"
-              :skills="appSkills"
-            />
-          </v-col>
-          <v-col
-            class="d-flex"
-            cols="12"
-            xl="3"
-            sm="6"
-            md="6"
-            lg="3"
-          >
-            <v-divider vertical class="divider" dark />
-            <skill-item
-              icon="/profit.png"
-              title="Marketing"
-              :subtitle="$t('skillsMarketingDesc')"
-              :skills="marketingSkills"
-            />
-          </v-col>
-        </v-row>
+  <div class="d-flex justify-center">
+    <div class="big-container">
+      <div class="skills-container">
+        <div class="skills">
+          <v-row>
+            <v-col
+              class="d-flex"
+              cols="12"
+              xl="3"
+              sm="6"
+              md="6"
+              lg="3"
+            >
+              <skill-item
+                icon="/analysis.svg"
+                title="Frontend"
+                :subtitle="$t('skillsFrontDesc')"
+                :skills="frontendSkills"
+              />
+            </v-col>
+            <v-col
+              class="d-flex"
+              cols="12"
+              xl="3"
+              sm="6"
+              md="6"
+              lg="3"
+            >
+              <v-divider vertical class="divider" dark/>
+              <skill-item
+                icon="/seo.svg"
+                title="Backend"
+                :subtitle="$t('skillsBackendDesc')"
+                :skills="backendSkills"
+              />
+            </v-col>
+            <v-col
+              class="d-flex"
+              cols="12"
+              xl="3"
+              sm="6"
+              md="6"
+              lg="3"
+            >
+              <v-divider vertical class="divider" dark/>
+              <skill-item
+                icon="/mobile-app.svg"
+                :title="$t('appDevelopment')"
+                :subtitle="$t('skillsAppDesc' )"
+                :skills="appSkills"
+              />
+            </v-col>
+            <v-col
+              class="d-flex"
+              cols="12"
+              xl="3"
+              sm="6"
+              md="6"
+              lg="3"
+            >
+              <v-divider vertical class="divider" dark/>
+              <skill-item
+                icon="/profit.png"
+                title="Marketing"
+                :subtitle="$t('skillsMarketingDesc')"
+                :skills="marketingSkills"
+              />
+            </v-col>
+          </v-row>
+        </div>
       </div>
     </div>
   </div>
@@ -85,23 +87,24 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.big-container {
   position: relative;
   height: 800px;
+  width: 1440px ;
 }
 .skills-container {
   display: flex;
   position: absolute;
   height: auto;
   width: 100%;
-  top: -20px;
+  top: -50px;
   left:0;
   justify-content: center;
   align-items: center;
 }
 
 .skills {
-  width: 60vw;
+  max-width: 90%;
   height: 100%;
   border-radius: 20px;
   box-shadow: 1.5px 1.5px 1.5px 1.5px #ccc;

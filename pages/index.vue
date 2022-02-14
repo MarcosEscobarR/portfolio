@@ -3,9 +3,9 @@
     <Welcome />
     <div class="skils-container">
       <Presentation />
-      <!--      <skils />-->
       <skills-cards />
     </div>
+    <v-divider class="primary"/>
     <recent-work />
     <v-divider class="primary" />
     <about-me />

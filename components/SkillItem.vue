@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="sub-container">
-      <img :src="icon" width="100px" height="100px" alt="icon">
+      <img :src="icon" width="120px" height="120px" alt="icon">
       <p class="title-container">{{ title }}</p>
       <div class="subtitle-container">
         <p class="subtitle">
@@ -54,7 +54,6 @@ export default {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  width: calc(100% / 3);
 }
 
 .sub-container {
@@ -64,13 +63,14 @@ export default {
 }
 .title-container {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 28px;
   padding: 10px 0;
 }
 
 .subtitle {
   text-align: center;
   letter-spacing: 0.5px;
+  font-size: 20px;
   color: grey;
   word-break: normal;
 }
@@ -86,6 +86,8 @@ export default {
   color: black;
   margin-bottom: 2px;
   font-weight: 300;
+  font-size: 20px;
+  text-align: center;
 }
 
 .items-container {

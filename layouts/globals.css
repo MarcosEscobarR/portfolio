@@ -4,10 +4,6 @@
   url(~assets/RobotoCondensed-Light.ttf) format("truetype");
 }
 
-.blue-container {
-  width: 100vw;
-  height: 400px;
-}
 html {
   font-family: "Roboto";
 }

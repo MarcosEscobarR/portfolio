@@ -18,7 +18,7 @@ export default {
 <style scoped>
 .welcome-container {
   height: calc(90vh - 40px);
-  width: 100vw;
+  width: 100%;
 }
 .big-title {
   font-weight: bold;

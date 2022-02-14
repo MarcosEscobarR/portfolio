@@ -1,64 +1,14 @@
 <template>
   <v-app dark>
-    <v-app-bar
-      prominent
-      color="white"
-      elevate-on-scroll
-      scroll-target="#scrolling-techniques-7"
-      class="px-10"
-      outlined
-    >
-      <div class="pa-5">
-        <v-img src="logo.svg" max-width="65" alt="logo" />
+    <header>
+      <div class="head-items">
+        <img src="logo.svg" alt="logo">
+        <div class="align-self-center">
+          <language-menu />
+        </div>
       </div>
-      <v-spacer />
-      <div class="pa-5" >
-        <v-menu
-          bottom
-          origin="center center"
-          transition="scale-transition"
-        >
-          <template #activator="{ on, attrs }">
-            <v-btn
-              icon
-              large
-              v-bind="attrs"
-              v-on="on"
-            >
-              <div class="mr-10">
-                <country-flag style="border-radius: 25px" :country="$i18n.locale === 'es'? 'esp' : 'us'" size="big" />
-                <p>{{ $i18n.locale === 'es' ? "Idoma Español" : "English Language" }}</p>
-              </div>
-            </v-btn>
-          </template>
+    </header>
 
-          <v-list>
-            <v-list-item :to="switchLocalePath('es')">
-              <v-list-item-icon>
-                <country-flag country="esp" size="big" />
-              </v-list-item-icon>
-              <v-list-item-title>Español</v-list-item-title>
-            </v-list-item>
-            <v-list-item :to="switchLocalePath('en')">
-              <v-list-item-icon>
-                <country-flag country="us" size="big" />
-              </v-list-item-icon>
-              <v-list-item-title>Ingles</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-      </div>
-      <div class="pa-5">
-<!--        <span>{{ $t('layoutTitle') }}</span>-->
-        <!--        <v-btn-->
-        <!--          outlined-->
-        <!--          rounded-->
-        <!--          color="primary"-->
-        <!--        >-->
-        <!--          {{ $t('helloButton') }}-->
-        <!--        </v-btn>-->
-      </div>
-    </v-app-bar>
     <v-main>
       <Nuxt />
     </v-main>
@@ -144,12 +94,8 @@
 </template>
 
 <script>
-import CountryFlag from 'vue-country-flag'
 
 export default {
-  components: {
-    CountryFlag
-  },
   data () {
     return {}
   }
@@ -160,6 +106,24 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+
+  .head-items {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+
+    img {
+      width: 65px;
+      height: 65px;
+      align-self: center;
+    }
+  }
 }
 
 .white-container {
@@ -246,7 +210,7 @@ export default {
   }
 
   .phrase {
-    p{
+    p {
       font-size: 20px;
     }
   }

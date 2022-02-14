@@ -1,17 +1,15 @@
 <template>
-  <div>
-    <div class="center">
-      <div class="wrapper">
-        <div ref="inner" class="inner">
-          <project-card v-for="(item, index) in Object.values(data)" :key="index" :title="item.title" :project-data="item" />
-        </div>
+  <div class="center">
+    <div class="wrapper">
+      <div ref="inner" class="inner">
+        <project-card v-for="(item, index) in Object.values(data)" :key="index" :title="item.title" :project-data="item" />
       </div>
+    </div>
 
-      <div ref="map" class="map" @click="handleClick">
-        <button class="active first" />
-        <button class="second" />
-        <button class="third" />
-      </div>
+    <div ref="map" class="map" @click="handleClick">
+      <button class="active first" />
+      <button class="second" />
+      <button class="third" />
     </div>
   </div>
 </template>
@@ -77,6 +75,7 @@ body {
   flex-direction: column;
   height: 100%;
   justify-content: center;
+  width: 100%;
 }
 
 .wrapper {

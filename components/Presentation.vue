@@ -19,39 +19,49 @@ export default {
 }
 </script>
 <style scoped>
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 100px;
-  }
-  .title-container {
-    padding-bottom: 20px;
-  }
+.blue-container {
+  width: 100%;
+  height: 400px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+}
+
+.title-container {
+  padding-bottom: 20px;
+}
+
+.presentation-title {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.presentation-subtitle {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
   .presentation-title {
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 30px;
   }
 
   .presentation-subtitle {
-    color: white;
-    font-size: 20px;
-    text-align: center;
+    font-size: 18px;
   }
 
-  @media (max-width: 800px) {
-    .presentation-title {
-      font-size: 30px;
-    }
-    .presentation-subtitle {
-      font-size: 18px;
-    }
-    .blue-container {
-      height: 300px;
-    }
-    .container {
-      padding: 50px 100px;
-    }
+  .blue-container {
+    height: 300px;
   }
+
+  .container {
+    padding: 50px 100px;
+  }
+}
 </style>
